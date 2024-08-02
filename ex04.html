@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 외부 웹사이트를 목적지로 할때에는 URL 작성 규칙에 맞춰서 작성해야 합니다. -->
+        <a href="https://www.naver.com">네이버로 가기</a><br>
+        <a href="https://www.google.com">구글로 가기</a><br>
+
+        <!-- 같은 물리적 경로에 있는 다른 html 문서는 문서 이름만으로 이동이 가능합니다. -->
+        <a href="ex01.html">ex01.html로 가기</a><br>
+        <a href="ex02.html">ex02.html로 가기</a>
+        <hr>
+        <!-- html 태그의 구성 
+            <태그이름 속성="속성값" 다른속성="속성값"> -->
+        <a href="https://www.naver.com" target="_blank">새창으로 네이버 열기</a><br>
+        <a href="mailto://ezen@ezenit.com">이메일 보내기</a><br>
+        <a href="tel://01012341234">전화 걸기</a><br>
+        
+        <!-- a태그로 javascript 실행하기 -->
+        <a href="javascript:console.log('hello,htmk');">콘솔에 출력</a><br>
+        <a href="javascript:window.open('https://www.naver.com', 'naver', 'width=300px,height=300px');">새창으로 열기</a>
+    </body>
+</html>
