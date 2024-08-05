@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 태그 연습</title>
+    </head>
+    <body>
+        <!-- input 태그 구조
+        <input type="입력받을 값의 종류"
+        value="기본값"
+        name="입력받은 값의 이름표로 사용할 값"
+        >
+         -->
+        <form>
+            아이디 : <input type="text" name="userid" placeholder="영문자로 4자 이상 작성해주세요." required><br>
+            비번 : <input type="password" name="userpw" value="" required><br>
+            이메일 : <input type="email" name="useremail" value="" required><br>
+            이름 : <input type="text" name="username" value="" required><br>
+            나이 : <input type="number" name="userage" value="" required><br>
+            성별 : <label>남성<input type="radio" name="gender" value="남성"></label>
+            <label>여성<input type="radio" name="gender" value="여성"></label>
+            <label>비공개<input type="radio" name="gender" value="none"></label><br>
+            취미 : 
+            <label>낚시<input type="checkbox" name="hobby" value="1"></label>
+            <label>영화<input type="checkbox" name="hobby" value="2"></label>
+            <label>음감<input type="checkbox" name="hobby" value="3"></label>
+            <label>독서<input type="checkbox" name="hobby" value="4"></label>
+            <label>축구<input type="checkbox" name="hobby" value="5"></label>
+            <label>야구<input type="checkbox" name="hobby" value="6"></label><br>
+            <input type="button" value="취소하기">
+            <input type="submit" value="가입하기"><br>
+        </form>
+    </body>
+    </html>
