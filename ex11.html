@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form 태그 연습</title>
+    </head>
+    <body>
+        <a href="https://search.naver.com/search.naver?query=css">네이버에서 css 검색</a><br>
+        <a href="https://www.google.com/search?q=html">구글에서 html 검색</a>
+        <!-- form 속성
+         action : 데이터를 제출할 대상의 주소 
+         method : 데이터를 제출하는 방법
+         get / post
+         get방식으로 데이터를 보낼때는 url을 이용합니다.
+         => url은 ascii코드로 인코딩 됩니다
+         => 한글을 보낼때 문제가 됩니다.-->
+        <form action="https://search.naver.com/search.naver" method="get">
+            <input type="text" name="query"><br>
+            <input type="search" name="query"><br>
+            <input type="reset" value="초기화">
+            <input type="submit" value="네이버로 검색하기">
+        </form>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q"><br>
+            <input type="search" name="q"><br>
+            <input type="reset" value="초기화">
+            <input type="submit" value="구글로 검색하기">
+        </form>
+    </body>
+</html>

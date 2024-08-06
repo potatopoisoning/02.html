@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="kr">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>input 태그 연습</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>회원가입 폼 작성해보기</title>
     </head>
     <body>
         <form>
@@ -11,10 +11,12 @@
             비번 : <input type="password" name="userpw" value="" required><br>
             이메일 : <input type="email" name="useremail" value="" required><br>
             이름 : <input type="text" name="username" value="" required><br>
-            나이 : <input type="number" name="userage" value="" required><br>
-            성별 : <label>남성<input type="radio" name="gender" value="남성"></label>
-            <label>여성<input type="radio" name="gender" value="여성"></label>
-            <label>비공개<input type="radio" name="gender" value="none"></label><br>
+            나이 : <input type="number" name="userage" min="0" required><br>
+            성별 : 
+            <label>남성<input type="radio" name="gender" value="M"></label>
+            <label>여성<input type="radio" name="gender" value="F"></label>
+            <label>비공개<input type="radio" name="gender" value="N" checked></label><br>
+            <!-- radio, checkbox 등의 input에 기본적으로 '선택' 상태로 만들어주는 속성 키워드 = checked -->
             취미 : 
             <label>낚시<input type="checkbox" name="hobby" value="1"></label>
             <label>영화<input type="checkbox" name="hobby" value="2"></label>
@@ -22,8 +24,8 @@
             <label>독서<input type="checkbox" name="hobby" value="4"></label>
             <label>축구<input type="checkbox" name="hobby" value="5"></label>
             <label>야구<input type="checkbox" name="hobby" value="6"></label><br>
-            <input type="button" value="취소하기">
+            <input type="reset" value="취소하기">
             <input type="submit" value="가입하기"><br>
         </form>
     </body>
-    </html>
+</html>
