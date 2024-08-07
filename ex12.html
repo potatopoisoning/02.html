@@ -88,10 +88,16 @@ textarea는 스페이스 줄바꿈 탭등이 인식 됩니다.
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
-                        <input type="submit" value="가입완료">
+                        <input type="submit" value="가입하기">
                         <input type="reset" value="취소">
-                        <!-- form 내부에 작성된 button 태그는 기본 type이 submit -->
-                        <button type="button">버튼</button>
+                        <!-- form 내부에 작성된 button 태그는 기본 type이 submit
+                         => input type='submit'와 동일하게 동작합니다.
+                         단순한 버튼으로 동작하게 하려면
+                         type='button'으로 작성합니다. -->
+                        <button>기본버튼</button>
+                        <button type="submit">submit버튼</button>
+                        <button type="reset">reset버튼</button>
+                        <button type="button">button버튼</button>
                     </td>
                 </tr>
             </table>
